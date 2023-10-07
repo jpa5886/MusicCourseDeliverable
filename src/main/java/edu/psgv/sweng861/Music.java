@@ -16,7 +16,7 @@ import java.net.URLEncoder;
 public class Music 
 {
 	//keys needed to construct http request for spotify api
-	private static String key = "e02310119bmsh53735ac74d9ac06p10e94bjsnee3bb35837ed";
+	private static String key = "b9eefb96c1msh2eb4b323393c8a0p1bd98fjsn194b3fce29a4";
 	private static String host = "spotify23.p.rapidapi.com";
 	
 	/**
@@ -122,7 +122,7 @@ public class Music
 					else if(userAnswer.contains("artist")) 
 					{
 						//will show the top songs for the user input artist
-						System.out.println("\nTop Songs: ");
+						System.out.println("\nTop 10 Songs: ");
 						
 						//searches the jsonObject for the name key to return song names
 						parser.getKey(inputJSONObject, "name", oldSearch);
