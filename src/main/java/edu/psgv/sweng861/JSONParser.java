@@ -14,8 +14,13 @@ public class JSONParser {
 	{
 		// TODO Auto-generated method stub
 	}
-	
-	//searches through the JSON file for keys
+
+	/**
+	 * searches through the JSON file for keys
+	 * @param json
+	 * @param key
+	 * @param search
+	 */
 	public void getKey(JSONObject json, String key, String search) 
 	{
 		boolean exists = json.has(key);

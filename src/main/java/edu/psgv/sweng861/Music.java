@@ -11,7 +11,8 @@ import org.json.JSONObject;
 import java.net.URLEncoder;
 
 /**
- * Class that
+ * Class that will provide the end-user with the functionality 
+ * to inquire about a song or a singer.
  */
 public class Music 
 {
@@ -74,7 +75,7 @@ public class Music
 			}
 
 			String search = input.nextLine().toLowerCase();
-			String oldSearch = search;
+			String oldSearch = search; //string to use to pass in to the parser (do not want encoded)
 			//encode search for URL
 			search = URLEncoder.encode(search, "UTF-8");
 			
